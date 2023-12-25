@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <title>Sessions</title>
+    </head>
+    <body>
+        <form action="/">
+            <button type="submit" class="btn btn-outline-secondary">Return to Home</button>
+        </form>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Strength - Push</h5>
+                    <p class="card-text">Work your chest, triceps, and shoulders with this strength workout.</p>
+                </div>
+                <div class="card-footer">
+                    <form action="/sessions/push">
+                        <button class="btn btn-primary" type="submit">Do This!</button>
+                    </form>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Strength - Pull</h5>
+                    <p class="card-text">Work your back, biceps, and forearms with this strength workout.</p>
+                </div>
+                <div class="card-footer">
+                    <form action="/sessions/pull">
+                        <button class="btn btn-primary" type="submit">Do This!</button>
+                    </form>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Strength - Legs</h5>
+                    <p class="card-text">Work your legs and core with this strength workout</p>
+                </div>
+                <div class="card-footer">
+                    <form action="/sessions/legs">
+                        <button class="btn btn-primary" type="submit">Do This!</button>
+                    </form>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Strength - Core</h5>
+                    <p class="card-text">Target your core alone with this strength workout</p>
+                </div>
+                <div class="card-footer">
+                    <form action="/sessions/core">
+                        <button class="btn btn-primary" type="submit">Do This!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Power - Plyometrics</h5>
+                    <p class="card-text">Gain explosive power in your legs with this plyo workout</p>
+                </div>
+                <div class="card-footer">
+                    <form action="/sessions/plyos">
+                        <button class="btn btn-primary" type="submit">Do This!</button>
+                    </form>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Power - Speed</h5>
+                    <p class="card-text">Gain speed through this speed workout</p>
+                </div>
+                <div class="card-footer">
+                    <form action="/sessions/speed">
+                        <button class="btn btn-primary" type="submit">Do This!</button>
+                    </form>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Power - Acceleration</h5>
+                    <p class="card-text">Target your sprint start with this acceleration workout</p>
+                </div>
+                <div class="card-footer">
+                    <form action="/sessions/acceleration">
+                        <button class="btn btn-primary" type="submit">Do This!</button>
+                    </form>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Endurance - Cardio</h5>
+                    <p class="card-text">Challenge your heart with this cardio workout</p>
+                </div>
+                <div class="card-footer">
+                    <form action="/sessions/cardio">
+                        <button class="btn btn-primary" type="submit">Do This!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Flexibility</h5>
+                    <p class="card-text">Gain higher range of motion through this routine</p>
+                </div>
+                <div class="card-footer">
+                    <form action="/sessions/flexibility">
+                        <button class="btn btn-primary" type="submit">Do This!</button>
+                    </form>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Misc - Warmup</h5>
+                    <p class="card-text">A general warmup usable for any session</p>
+                </div>
+                <div class="card-footer">
+                    <form action="/sessions/warmup">
+                        <button class="btn btn-primary" type="submit">Do This!</button>
+                    </form>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Misc - Cooldown</h5>
+                    <p class="card-text">General cooldown for after any session</p>
+                </div>
+                <div class="card-footer">
+                    <form action="/sessions/cooldown">
+                        <button class="btn btn-primary" type="submit">Do This!</button>
+                    </form>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Misc - Stretching</h5>
+                    <p class="card-text">Stretching routine for anytime and anyplace</p>
+                </div>
+                <div class="card-footer">
+                    <form action="/sessions/stretching">
+                        <button class="btn btn-primary" type="submit">Do This!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>
