@@ -10,13 +10,13 @@ Session(app)
 
 db = SQL("sqlite:///database.db")
 
-@app.route("/", methods=["GET", "POST"])
+@app.route("WorkTrack/", methods=["GET", "POST"])
 def index():
     if not session.get("username"):
         return redirect("/login", code=307)
     return render_template("index.html", username=session["username"])
 
-@app.route("/login", methods=["GET", "POST"])
+@app.route("/WorkTrack/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST" and request.form.get("username") != None and request.form.get("password") != None:
         entered_username = request.form.get("username")
